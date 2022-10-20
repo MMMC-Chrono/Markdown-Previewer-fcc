@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+$dark-blue: #1b1b3a;
+$light-blue: #a1cdf4;
+$black: #0d121b;
+
+body {
+    display: flex;
+    background-color: $light-blue;
+}
+
+h1 {
+    margin: auto;
+    color: $dark-blue;
+}
