@@ -7,11 +7,22 @@ $light-blue: #a1cdf4;
 $black: #0d121b;
 
 body {
-    display: flex;
     background-color: $light-blue;
 }
 
 h1 {
-    margin: auto;
-    color: $dark-blue;
+    text-align: center;
+}
+
+textarea {
+    background-color: $light-blue;
+    box-shadow: 0px 0px 5px $dark-blue;
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    
+}
+@media only screen and (min-width: 601px) {
+
 }
