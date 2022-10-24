@@ -7,22 +7,103 @@ $light-blue: #a1cdf4;
 $black: #0d121b;
 
 body {
-    background-color: $light-blue;
+    position: relative;
+    background-color: $black;
+    color: $light-blue;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     text-align: center;
 }
 
-textarea {
-    background-color: $light-blue;
-    box-shadow: 0px 0px 5px $dark-blue;
+#editor-box, #preview-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $dark-blue;
+    color: $light-blue;  
+    border: 1px solid black;
+}
 
+#editor-box h2, #preview-box h2 {
+    position: relative;
+    text-align: center;
+}
+
+textarea, #preview {
+    background-color: $light-blue;
+    color: $dark-blue;
+}
+
+textarea:hover {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+img {
+    display: block;
 }
 
 @media only screen and (min-width: 400px) and (max-width: 600px) {
     
+    h1 {
+        font-size: 25px;
+    }
+    
+    #editor-box {
+        max-width: 300px;
+    }
+
+    #preview-box {
+        max-width: 350px;
+    }
+
+    #editor-box, #preview-box {
+        margin: 20px auto;
+        box-shadow: 0px 0px 9px $light-blue;
+        font-size: 13px;
+
+    }
+
+    #editor-box h2, #preview-box h2 {
+        margin: 5px;
+    }
+
+    textarea {
+        max-width: 300px;
+        min-width: 299.9px;
+        min-height: 250px;
+        padding: 5px 15px;
+        font-weight: 500;
+    }
+    
+    #preview {
+        padding: 15px;
+        font-size: 14px;
+        font-weight: 540;
+    }
+
+    td,th {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    img {
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media only screen and (min-width: 601px) {
-
+    #preview-box {
+        max-width: 800px;
+    }
+    img {
+        max-width: 600px;
+    }
 }

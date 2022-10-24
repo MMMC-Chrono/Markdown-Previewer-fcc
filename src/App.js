@@ -19,8 +19,14 @@ class App extends React.Component {
         return (
             <div>
                 <h1>Markdown Previewer</h1>
-                <textarea id="editor" value={this.state.input} onChange={this.handleChange}></textarea>
-                <div id="preview" dangerouslySetInnerHTML={{__html:marked.parse(this.state.input)}}></div>
+                <div id="editor-box">
+                    <h2>Editor</h2>
+                    <textarea id="editor" value={this.state.input} onChange={this.handleChange}></textarea>
+                </div>
+                <div id="preview-box">
+                    <h2>Previewer</h2>
+                    <div id="preview" dangerouslySetInnerHTML={{__html:marked.parse(this.state.input)}}></div>
+                </div>
             </div>
         )
     }
