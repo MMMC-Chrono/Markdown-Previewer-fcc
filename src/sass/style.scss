@@ -45,6 +45,11 @@ table {
     border-collapse: collapse;
 }
 
+pre, code {
+    background-color: $black;
+    color: $light-blue;
+}
+
 img {
     display: block;
 }
@@ -67,7 +72,6 @@ img {
         margin: 20px auto;
         box-shadow: 0px 0px 9px $light-blue;
         font-size: 13px;
-
     }
 
     #editor-box h2, #preview-box h2 {
@@ -79,12 +83,13 @@ img {
         min-width: 299.9px;
         min-height: 250px;
         padding: 5px 15px;
+        font-size: 12px;
         font-weight: 500;
     }
     
     #preview {
         padding: 15px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 540;
     }
 
@@ -93,17 +98,68 @@ img {
         padding: 5px;
     }
 
+    pre {
+        max-height: 300px;
+        width: 100%;
+        padding: 5px 1px;
+    }
+
     img {
         max-width: 250px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 }
 @media only screen and (min-width: 601px) {
-    #preview-box {
-        max-width: 800px;
+    h1 {
+        font-size: 40px;
     }
+    
+    #editor-box {
+        max-width: 700px;
+    }
+
+    #preview-box {
+        max-width: 900px;
+    }
+
+    #editor-box, #preview-box {
+        margin: 40px auto;
+        box-shadow: 0px 0px 9px $light-blue;
+        font-size: 20px;
+    }
+
+    #editor-box h2, #preview-box h2 {
+        margin: 20px;
+    }
+
+    textarea {
+        max-width: 700px;
+        min-width: 699.9px;
+        min-height: 400px;
+        padding: 20px 40px;
+        font-weight: 450;
+        font-size: 20px;
+    }
+    
+    #preview {
+        padding: 20px 40px;
+        font-size: 22px;
+        font-weight: 540;
+    }
+
+    td,th {
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    pre {
+        max-height: 900px;
+        width: 100%;
+        padding: 10px;
+    }
+
     img {
-        max-width: 600px;
+        max-width: 500px;
+        margin: 30px auto;
     }
 }
