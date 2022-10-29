@@ -57,6 +57,11 @@ img {
 footer {
     text-align: center;
 }
+#gmail {
+    text-decoration: none;
+    color: $light-blue;
+    cursor: pointer;
+}
 
 @media only screen and (min-width: 400px) and (max-width: 600px) {
     
